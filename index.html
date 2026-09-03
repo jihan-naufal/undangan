@@ -26,12 +26,12 @@
       pointer-events: none !important;
     }
 
-    /* Cover Utama */
+    /* Cover Utama - Memanggil file cover htlm (1).jpg */
     #envelope-screen {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: url('cover.jpg') no-repeat center center / contain;
+      background: url('cover%20htlm%20(1).jpg') no-repeat center center / contain;
       background-color: #cfd8dc;
       display: flex;
       flex-direction: column;
@@ -68,18 +68,18 @@
 
     .yth-text {
       font-size: 11px;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       color: #e2e8f0;
-      text-transform: uppercase;
       font-family: sans-serif;
       margin-bottom: 6px;
       line-height: 1.4;
     }
 
+    /* Garis bawah nama tamu diganti hitam transparan */
     .guest-box {
       margin: 2px 0 8px 0;
       padding: 2px 8px;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.6);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
       width: 100%;
     }
 
@@ -92,25 +92,27 @@
       line-height: 1.2;
     }
 
+    /* Tombol Buka Undangan diganti hitam semi-transparan */
     .open-btn {
       padding: 7px 18px;
       font-size: 11px;
       font-family: sans-serif;
       letter-spacing: 1px;
       text-transform: uppercase;
-      background: linear-gradient(135deg, #c5a059, #9e7d3b);
+      background: rgba(0, 0, 0, 0.5);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 20px;
       cursor: pointer;
       font-weight: 600;
       box-shadow: 0 3px 10px rgba(0,0,0,0.3);
       transition: all 0.3s ease;
+      backdrop-filter: blur(4px);
     }
 
     .open-btn:hover {
       transform: scale(1.05);
-      background: linear-gradient(135deg, #d4af37, #b58d3d);
+      background: rgba(0, 0, 0, 0.7);
     }
 
     /* Container Canva */
@@ -151,9 +153,9 @@
     <source src="Lagu.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Embed Canva -->
+  <!-- Embed Canva Baru -->
   <div id="canva-container">
-    <iframe src="https://www.canva.com/design/DAHRBbua1dY/SvsA3FByco7fZXCkagH8Zg/view?embed" allowfullscreen></iframe>
+    <iframe src="https://www.canva.com/design/DAHT1haiPlI/Q5fHgm8Q782H7SKQk5Cfiw/view?embed" allowfullscreen></iframe>
   </div>
 
   <script>
